@@ -1,0 +1,284 @@
+KOPPA LIBRARIES — SOFTWARE LICENSE AND PATENT NON-APPROPRIATION ADDENDUM
+Draft 0.3 — For Legal Review
+Copyright © 2026 REDΣ Ecosystems Research Collective
+
+Licensor: REDΣ Ecosystems Research Collective
+Project: Koppa Libraries
+Separate patent framework: Defensive Patent License 1.1 (DPL 1.1)
+
+IMPORTANT: This is a proposed custom software license, not an OSI-approved license and not DPL 1.1 itself. DPL 1.1 is a separate patent license and is not modified by this document.
+
+0. SOFTWARE COPYRIGHT LICENSE AND ACCEPTANCE
+
+0.1 Subject to compliance with this License, the Licensor grants each recipient a worldwide, royalty-free, nonexclusive copyright license to use, reproduce, modify, prepare derivative works of, distribute, and commercially deploy Koppa, including as part of proprietary products and services.
+
+0.2 Exercise of the permissions granted in Section 0.1 is conditioned on compliance with Sections 1 through 12, including Sections 4 and 10. Recipients distributing copies or substantial portions of Koppa must retain this copyright notice and License and must not misrepresent the origin of the software.
+
+0.3 These copyright permissions do not themselves grant patent rights. Any patent grant under DPL 1.1 requires satisfaction of the terms of that separate instrument. No term here purports to amend DPL 1.1.
+
+1. PURPOSE
+
+Koppa is published freely to support defensive mitigation of vulnerabilities in cryptographic and computational systems, commercial implementation, independent research, and the preservation of public access to its underlying technology.
+
+This License is intended to prevent recipients from using the licensed technology to obtain or enforce exclusive patent rights that would restrict the continued use, implementation, improvement, or distribution of Koppa.
+
+2. COVERED TECHNOLOGY
+
+Covered Technology means the mathematical methods, algorithms, computational mechanisms, transformations, implementations, and other technical inventions expressly disclosed in or necessarily embodied by the Koppa materials distributed under this License.
+
+Covered Technology includes modifications and derivative implementations to the extent they incorporate those disclosed inventions.
+
+Independent technology developed without incorporating Covered Technology is excluded.
+
+3. PERMITTED COMMERCIAL USE
+
+Subject to this License, recipients may:
+- Use Koppa for personal, academic, governmental, and commercial purposes.
+- Incorporate Koppa into proprietary enterprise systems.
+- Modify and extend Koppa.
+- Distribute software and products incorporating Koppa.
+- Provide commercial services built upon Koppa.
+
+No royalties are required for these permitted software copyright uses.
+
+Patent rights, where applicable, are governed separately by Defensive Patent License 1.1 or another expressly authorized patent license.
+
+4. PATENT NON-APPROPRIATION
+
+As a condition of exercising the permissions granted by this License, recipients agree not to:
+
+a. Seek or obtain patent claims directed to Covered Technology as disclosed by the Licensor.
+b. Claim exclusive patent rights over Covered Technology solely by modifying, translating, optimizing, or reimplementing the disclosed mechanisms.
+c. Assert patent rights against another party for practicing Covered Technology as disclosed in the licensed materials.
+d. Use patent claims covering modifications or improvements incorporating Covered Technology to prevent others from implementing the original Covered Technology.
+
+5. INDEPENDENT IMPROVEMENTS
+
+This License does not prohibit patent protection for independently patentable inventions developed by recipients, provided that such patents are not asserted to restrict the implementation or use of Covered Technology.
+
+Recipients may commercialize such improvements subject to their obligations under the applicable licenses.
+
+6. DEFENSIVE PATENT RIGHTS
+
+Nothing in this License prevents defensive action against a party asserting patent claims to restrict access to Covered Technology.
+
+Where Defensive Patent License 1.1 applies, its terms govern the rights and obligations of DPL participants.
+
+7. REMEDIES
+
+Violation of Section 4 constitutes a material breach of this License.
+
+The Licensor may pursue termination of the rights granted by this License, subject to applicable law, notice requirements, and any applicable opportunity to cure.
+
+The Licensor may also seek other remedies available under applicable law.
+
+8. SEPARATION OF LICENSES
+
+This License does not amend, replace, or purport to create a modified version of Defensive Patent License 1.1.
+
+Patent grants under DPL 1.1 remain subject to its unmodified terms.
+
+9. GOVERNING LAW
+
+To the extent permitted by applicable law, this License shall be governed by the laws of Illinois, United States, without regard to conflict-of-law principles.
+
+10. PROTECTION OF VICTIMS, DUE PROCESS, AND PROHIBITION OF LEGAL ABUSE
+
+10.1 Purpose and Public Interest
+
+Koppa is released freely and publicly to prevent the continued exploitation of victims of corporate neglect, particularly where failures to secure cryptographic, computational, or digital infrastructure expose individuals and organizations to harm.
+
+The availability of this technology shall not be used to shield negligent conduct, suppress legitimate claims, or deprive affected persons of access to justice.
+
+10.2 Express Condition of Software Licensing
+
+This Section constitutes an express and material condition of the copyright permissions granted under Section 0.
+
+Any person or organization exercising rights to copy, modify, distribute, or commercially deploy Koppa under this License accepts the obligations of this Section as part of the conditions governing those rights.
+
+These obligations are independent of participation in DPL 1.1.
+
+10.3 Prohibited Legal Abuse
+
+Licensees agree not to:
+
+a. Use Koppa or its licensing provisions to conceal, excuse, facilitate, or perpetuate exploitation arising from corporate negligence.
+b. Misrepresent the rights, obligations, or protections established by this License.
+c. Use patent claims, contractual restrictions, litigation, or regulatory proceedings to obstruct lawful defensive mitigation or suppress legitimate claims concerning Covered Technology.
+d. Invoke this License to deny affected customers access to lawful remedies.
+e. Use this License or its protections to obtain immunity from accountability for conduct violating applicable law.
+
+10.4 Automatic and Irrevocable Waiver Upon Violation
+
+As an express condition of receiving the rights granted by this License, each licensee prospectively agrees that a violation of Section 10.3 constitutes a triggering event.
+
+Upon such violation, the licensee automatically waives, without requiring further contractual consent, its right to invoke or enforce against affected customers, in connection with claims arising from or materially related to the violation:
+
+a. Mandatory or compelled arbitration agreements.
+b. Contractual waivers of jury trial.
+c. Contractual prohibitions on collective or class proceedings.
+d. Contractual restrictions on access to courts or judicial remedies.
+e. Contractual limitations that unlawfully restrict due process, procedural fairness, discovery, or available legal remedies.
+f. Any substantially equivalent contractual provision used to prevent affected customers from pursuing otherwise lawful claims.
+
+This waiver applies to agreements entered into before or after the licensee's acceptance of this License, to the maximum extent enforceable under applicable law.
+
+The waiver constitutes a direct contractual undertaking by the licensee and does not depend upon a modification of the underlying customer agreement.
+
+10.5 Intended Third-Party Beneficiaries
+
+Customers whose rights or interests are materially affected by a violation of Section 10.3 are expressly designated as intended third-party beneficiaries of Sections 10.3 and 10.4.
+
+Each such customer shall have the right, to the extent permitted by applicable law, to invoke the licensee's waiver, seek declaratory or injunctive relief, and enforce the obligations created by this Section.
+
+No additional agreement between the customer and the Licensor is required to establish the Licensor's intention to confer these benefits.
+
+10.6 Determination of Violation
+
+A triggering violation may be established by a court or other tribunal with competent jurisdiction through applicable proceedings.
+
+The underlying waiver is intended to arise upon the prohibited conduct itself, rather than upon the subsequent entry of judgment.
+
+Nothing in this Section requires an affected customer to obtain a separate judgment solely to establish the existence of rights otherwise enforceable under applicable law.
+
+10.7 Preservation of Fundamental Rights
+
+Nothing in this License shall diminish any person's constitutional, statutory, civil, contractual, or procedural rights.
+
+This Section shall be interpreted to preserve access to lawful remedies and to prevent the use of licensing arrangements to perpetuate exploitation.
+
+Where applicable law provides greater protections than those expressed here, those protections remain available.
+
+10.8 Survival and Severability
+
+The obligations arising from a triggering violation shall survive termination of the licensee's rights under this License to the extent permitted by applicable law.
+
+If any provision of this Section is found unenforceable, the remaining provisions shall continue to operate to the fullest extent permitted by law.
+
+The invalidity of one remedy shall not extinguish otherwise enforceable rights or obligations under this Section.
+
+10.9 Relationship to Other License Provisions
+
+This Section forms part of this Koppa software copyright license. It does not modify DPL 1.1.
+
+Where multiple provisions apply, they shall be interpreted to preserve the stated protective purposes to the greatest extent permitted by applicable law.
+
+11. FORCED HAND — EMERGENCY PUBLICATION AND CONTINUING LEGAL ADAPTATION
+
+11.1 Necessity of Immediate Release
+
+Koppa is being released under circumstances in which the speed, scope, and continuing consequences of the vulnerabilities being addressed prohibit the completion of all conventional legal review, jurisdiction-specific drafting, and procedural formalities before publication.
+
+The Licensor expressly declares that immediate defensive availability is necessary to protect affected individuals, organizations, and the public from continued exploitation.
+
+The urgency of publication shall not be interpreted as an intention to surrender, abandon, or diminish the protections, remedies, or obligations established by this License.
+
+11.2 Continuing Legal Adaptation
+
+Any future revisions necessary to comply with the legal requirements of any jurisdiction, or to incorporate additional protections and remedies permitted within that jurisdiction, shall be adopted and applied as necessary to give effect to the original protective purpose of this License.
+
+Such revisions may address enforceability, statutory compliance, procedural rights, contractual remedies, third-party beneficiary rights, and protections against patent appropriation or legal abuse.
+
+The Licensor expressly reserves the right to publish jurisdiction-specific provisions and corrective revisions as legal requirements become known or applicable.
+
+11.3 Preservation of Original Intent
+
+All future interpretations, corrections, and revisions shall preserve the following governing intentions:
+
+1. The free availability of Koppa for legitimate defensive mitigation and commercial implementation.
+2. The prevention of patent-based appropriation of Covered Technology.
+3. The protection of individuals and organizations harmed by corporate neglect or exploitation.
+4. The preservation and restoration of access to due process and lawful remedies.
+5. The prevention of contractual or procedural mechanisms being used to perpetuate exploitation.
+
+No technical deficiency in the original legal drafting shall be construed as an affirmative intention to waive these protections.
+
+11.4 Jurisdiction-Specific Application
+
+Where applicable law permits broader protections or remedies than those expressly stated in this License, the Licensor intends that such protections may be incorporated into jurisdiction-specific revisions.
+
+Where a provision is unenforceable, the remaining provisions shall continue to operate to the fullest extent permitted by applicable law.
+
+Any legally permissible modification shall be construed to preserve the protective purpose of the affected provision as closely as possible.
+
+11.5 Application of Future Revisions
+
+Corrective and jurisdiction-specific revisions shall apply prospectively to recipients accepting the revised License and, where permitted by applicable law and the terms of an existing agreement, to previously established licensing relationships.
+
+No revision shall be represented as automatically creating retrospective contractual obligations, withdrawing vested rights, or binding nonconsenting parties where applicable law does not permit that effect.
+
+However, all rights and remedies independently available under applicable law shall remain preserved.
+
+11.6 Declaration of Forced Hand
+
+The Licensor declares that this emergency publication is undertaken in response to circumstances requiring immediate defensive action.
+
+The inability to complete conventional legal formalities before release is expressly acknowledged.
+
+The governing intention is that no person or organization should be deprived of available protection or legal remedy merely because the urgency of addressing an existing vulnerability exceeded the time available to perfect the legal instrument.
+
+This declaration shall guide interpretation of the License to the extent permitted by applicable law.
+
+12. USE AT YOUR OWN RISK — DISCLAIMER OF WARRANTY AND LIMITATION OF LIABILITY
+
+12.1 Experimental and Research Technology
+
+Koppa is provided as an open computational research framework intended to support mathematical exploration, defensive security research, cryptographic mitigation, and commercial implementation.
+
+The technology may contain errors, incomplete implementations, unforeseen behaviors, or limitations that have not yet been identified.
+
+All recipients use Koppa at their own risk.
+
+12.2 No Warranty
+
+To the maximum extent permitted by applicable law, Koppa and its associated documentation, algorithms, libraries, and implementations are provided "AS IS" and "AS AVAILABLE," WITHOUT WARRANTY OF ANY KIND, express or implied.
+
+The Licensor expressly disclaims warranties of merchantability, fitness for a particular purpose, noninfringement, accuracy, reliability, availability, and suitability for security-critical applications.
+
+No representation is made that Koppa will identify, prevent, mitigate, or eliminate every vulnerability or security threat.
+
+12.3 Responsibility for Implementation
+
+Recipients are solely responsible for evaluating the suitability of Koppa for their intended applications, including:
+
+a. Testing and validating implementations before deployment.
+b. Evaluating compatibility with existing systems and security requirements.
+c. Assessing operational, financial, computational, and security risks.
+d. Maintaining appropriate safeguards, monitoring, and recovery procedures.
+e. Complying with applicable laws, regulations, and contractual obligations.
+
+Commercial deployment does not transfer responsibility for the recipient's implementation decisions to the Licensor.
+
+12.4 Limitation of Licensor Liability
+
+To the maximum extent permitted by applicable law, REDΣ Ecosystems Research Collective, its contributors, researchers, developers, and authorized distributors shall not be liable for damages arising from the use, inability to use, modification, distribution, or implementation of Koppa.
+
+This limitation includes direct, indirect, incidental, consequential, special, exemplary, or punitive damages, including data loss, operational interruption, financial loss, security incidents, and system failures, except where applicable law prohibits such exclusion.
+
+12.5 No Immunity for Licensee Misconduct
+
+Nothing in this Section shall:
+
+a. Relieve a licensee of responsibility for its own negligence, misconduct, unlawful activities, or violations of applicable law.
+b. Limit the obligations established by Section 10 concerning the protection of affected customers and access to legal remedies.
+c. Permit a licensee to invoke this disclaimer to shield itself from claims arising from its own products, services, infrastructure, or security practices.
+d. Waive or restrict the rights of individuals who have not agreed to the applicable legal terms.
+e. Exclude liability that cannot lawfully be excluded, including liability for intentional misconduct or other conduct subject to mandatory legal protections.
+
+12.6 Defensive Publication
+
+Koppa is released in good faith to facilitate defensive mitigation and responsible technological development.
+
+Publication does not constitute a guarantee of security, certification of third-party implementations, or assumption of responsibility for vulnerabilities in external systems.
+
+The Licensor's decision to make defensive technology publicly available shall not, by itself, constitute acceptance of responsibility for the preexisting security failures of third parties.
+
+12.7 Preservation of Public Protection
+
+The allocation of risk established in this Section applies to the use and implementation of Koppa.
+
+It shall not be interpreted to defeat the protective purposes of Sections 10 and 11, diminish otherwise applicable consumer protections, or authorize the exploitation of individuals harmed by corporate neglect.
+
+Where provisions conflict, they shall be interpreted consistently with applicable law and the expressly stated purposes of this License.
+
+END OF LICENSE
