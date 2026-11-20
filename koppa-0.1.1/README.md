@@ -70,4 +70,5 @@ python -m pytest tests/ -q     # or: python tests/test_koppa.py
 Built from a multi-panel verification campaign (applications, compute, edge cases)
 with independent re-execution of every load-bearing claim. All math identities
 standard (quotient rule, log-derivative, projective charts); the contribution is
-the deferred-resolution interface and its measured behavior. MIT license.
+the deferred-resolution interface and its measured behavior. See the repository root
+LICENSE for the Koppa Software License and Patent Non-Appropriation Addendum (draft 0.3).
