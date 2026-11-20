@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "koppa"
+version = "0.1.1"
+description = "Deferred relational tracking: unresolved ratio pairs, compose without dividing, resolve on demand."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "REDΣ Ecosystems Research Collective"}]
+dependencies = ["numpy", "mpmath", "scipy"]
+
+[tool.setuptools]
+packages = ["koppa"]
+
+[tool.setuptools.data-files]
+"koppa_examples" = ["examples/demo_inference.py", "examples/demo_predicates.py", "examples/demo_scan.py", "examples/demo_ml.py", "examples/demo_finance.py", "examples/check_scan.py"]
+"koppa_tests" = ["tests/test_koppa.py", "tests/test_token.py"]
