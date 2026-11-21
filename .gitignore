@@ -1,0 +1,11 @@
+# Generated Python packaging outputs
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+*.whl
+*.tar.gz
+.pytest_cache/
+.venv/
+venv/
