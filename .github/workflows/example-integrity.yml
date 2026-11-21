@@ -1,0 +1,49 @@
+name: Koppa build and integrity example
+
+on:
+  push:
+    branches:
+      - example/koppa-supply-chain-integrity
+  pull_request:
+    paths:
+      - 'koppa-0.1.1/**'
+      - 'examples/supply_chain_integrity/**'
+      - '.github/workflows/example-integrity.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout exact source revision
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install build and test dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install build
+          python -m pip install ./koppa-0.1.1
+      - name: Run existing regression tests
+        run: python -m unittest discover -s koppa-0.1.1/tests -p 'test_*.py' -v
+      - name: Build wheel and source distribution
+        run: python -m build --outdir dist koppa-0.1.1
+      - name: Generate unapproved candidate manifest
+        run: |
+          python examples/supply_chain_integrity/koppa_integrity.py candidate --dir dist --output evidence/candidate-manifest.json
+      - name: Verify artifacts against candidate manifest
+        run: |
+          python examples/supply_chain_integrity/koppa_integrity.py verify --dir dist --manifest evidence/candidate-manifest.json --evidence evidence/candidate-check.json
+      - name: Upload candidate artifacts and evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: koppa-unapproved-build-candidate
+          path: |
+            dist/*
+            evidence/*
+          if-no-files-found: error
