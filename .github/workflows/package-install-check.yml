@@ -1,0 +1,93 @@
+name: Koppa package installation verification
+
+on:
+  push:
+    branches:
+      - development
+    paths:
+      - "koppa-0.1.1/**"
+      - ".github/workflows/package-install-check.yml"
+      - ".gitignore"
+  pull_request:
+    paths:
+      - "koppa-0.1.1/**"
+      - ".github/workflows/package-install-check.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  package-install:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.9", "3.11"]
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install test and build tools
+        run: python -m pip install --upgrade pip build
+
+      - name: Run source regression tests
+        run: |
+          python -m pip install ./koppa-0.1.1
+          python -m unittest discover -s koppa-0.1.1/tests -p 'test_*.py' -v
+
+      - name: Build wheel and source distribution
+        run: python -m build --outdir dist ./koppa-0.1.1
+
+      - name: Verify clean wheel installation
+        shell: bash
+        run: |
+          python -m venv "$RUNNER_TEMP/koppa-wheel"
+          "$RUNNER_TEMP/koppa-wheel/bin/python" -m pip install dist/*.whl
+          (
+            cd "$RUNNER_TEMP"
+            "$RUNNER_TEMP/koppa-wheel/bin/python" - <<'PY'
+          from importlib.metadata import distribution, version
+          from koppa import LazyRelational, Ratio, compare, seal, verify
+
+          assert version("koppa") == "0.1.1"
+          assert "MIT" not in (distribution("koppa").metadata.get("License") or "")
+          assert LazyRelational(1, 0, 3, 0).compose(
+              LazyRelational(1, 0, 5, 0)
+          ).resolved_float() == 15.0
+          assert compare(Ratio(1, 2), Ratio(2, 4)) == 0
+          artifact, token, digest = seal(b"installed-koppa-wheel")
+          assert verify(artifact, token) and token.resolve() == digest
+          print("CLEAN WHEEL INSTALL: PASS")
+          PY
+          )
+
+      - name: Verify clean source archive installation
+        shell: bash
+        run: |
+          python -m venv "$RUNNER_TEMP/koppa-sdist"
+          "$RUNNER_TEMP/koppa-sdist/bin/python" -m pip install dist/*.tar.gz
+          (
+            cd "$RUNNER_TEMP"
+            "$RUNNER_TEMP/koppa-sdist/bin/python" - <<'PY'
+          from importlib.metadata import distribution, version
+          from koppa import seal, verify, fixed_point_digest
+
+          assert version("koppa") == "0.1.1"
+          assert "MIT" not in (distribution("koppa").metadata.get("License") or "")
+          artifact, token, digest = seal(b"installed-koppa-sdist")
+          assert verify(artifact, token) and token.resolve() == digest
+          assert len(fixed_point_digest(b"installed-koppa-sdist", token)) == 32
+          print("CLEAN SOURCE ARCHIVE INSTALL: PASS")
+          PY
+          )
+
+      - name: Store tested distribution files
+        uses: actions/upload-artifact@v4
+        with:
+          name: koppa-install-tested-py${{ matrix.python-version }}
+          path: dist/*
+          if-no-files-found: error
