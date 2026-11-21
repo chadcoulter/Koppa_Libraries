@@ -11,10 +11,11 @@ practice given a type-level interface, with measured results and known limits.
 ## Install
 
 ```bash
-pip install koppa-0.1.0.tar.gz      # or: pip install .
+python -m pip install .                 # from the koppa-0.1.1 directory
+# or install a distribution produced by: python -m build
 ```
 
-Requires Python ≥ 3.9, numpy, mpmath.
+Requires Python ≥ 3.9, numpy, mpmath, scipy.
 
 ## Modules
 
