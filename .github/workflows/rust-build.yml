@@ -1,0 +1,34 @@
+name: Koppa Rust build and regression tests
+
+on:
+  push:
+    branches:
+      - rust-version
+    paths:
+      - 'rust/**'
+      - '.github/workflows/rust-build.yml'
+  pull_request:
+    paths:
+      - 'rust/**'
+      - '.github/workflows/rust-build.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  rust-build:
+    runs-on: ubuntu-24.04
+    defaults:
+      run:
+        working-directory: rust
+    steps:
+      - uses: actions/checkout@v4
+      - name: Display compiler versions
+        run: |
+          rustc --version
+          cargo --version
+      - name: Build Rust library
+        run: cargo build --locked
+      - name: Run Rust unit and integration tests
+        run: cargo test --locked --all-targets
